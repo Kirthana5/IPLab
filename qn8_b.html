@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!--Create a dynamic HTML form that allows the user to enter the name of the city. 
+While submission of this form, the servlet retrieves and responses the weather report for the user entered city.-->
+<html>
+    <head>
+        <title>Weather report</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="http://localhost:8080/IPLab/qn8_b">
+            City<br>
+            <select name="cityname" id="cityname">
+                    <option value="Choose">Choose</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Trichy">Trichy</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Salem">Salem</option>
+                    <option value="Vellore">Vellore</option>
+                    <option value="Tanjore">Tanjore</option>
+                    <option value="Erode">Erode</option>
+                    <option value="Karur">Karur</option>
+                    <option value="Tirupur">Tirupur</option>
+                </select>
+            <br><br>
+                
+                <input type="submit" value="Get Weather status">
+        </form>
+    </body>
+</html>
