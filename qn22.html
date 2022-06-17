@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!--22.	Design a table and alter that table's column properties using an external and internal CSS file.-->
+
+<html>
+    <head>
+        <title>Table Column</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="qn22.css">
+        <style>
+            .col1{
+                background-color:  blue;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <colgroup>
+                <col span="2" class="col1" >
+                <col class="col2">
+            </colgroup>
+            <tr>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+                <th>Heading 3</th>
+            </tr>
+            <tr>
+                <td>R1C1</td>
+                <td>R1C2</td>
+                <td>R1C3</td>
+            </tr>
+            <tr>
+                <td>R2C1</td>
+                <td>R2C2</td>
+                <td>R2C3</td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!--28.	Create a program to change the content of the web page using AJAX. -->
+
+<html>
+    <head>
+        <title>AJAX</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="demo">This content is gonna be updated.</div>
+        <br>
+        <input type="button" value="Update" onclick="update()">
+        <script>
+            function update()
+            {
+                const xhs=new XMLHttpRequest();
+                xhs.onreadystatechange=function(){
+                    if(this.status==200 && this.readyState==4)
+                    {
+                        document.getElementById("demo").innerHTML=this.responseText;
+                    }
+                };
+                xhs.open("GET","qn28.txt",true);
+                xhs.send();
+            }
+            
+        </script>
+    </body>
+</html>

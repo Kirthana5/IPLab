@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!--6.	Create a form that gets input of several lines of text and a search character. 
+On clicking the search button in the client form invoke suitable script function to display the number
+of occurrences of the character in the text using suitable string methods.-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <form name="myform">
+            <label for="textEntered">Enter text</label><br>
+            <textarea name="textEntered" id="textEntered" cols="50" rows="10"></textarea>
+
+            <br><br>
+
+            <label for="search">Enter search Character</label>
+            <input type="text" id="search">
+
+            <br><br>
+
+            <input type="button" value="Find Occurence" onclick="findOccurence()">
+
+            <input type="button" value="Clear" onclick="clearForm()">
+
+            <br><br>
+
+            <label for="occurence">No. of Occurences</label>
+            <input type="text" id="occurence" style="visibility: hidden;">
+        </form>
+    
+    <script>
+        function findOccurence()
+        {
+            var text=document.getElementById("textEntered").value;
+            var search=document.getElementById("search").value;
+            const regex=new RegExp(search,'g');
+
+            document.getElementById("occurence").value=(text.match(regex)==null) ? 0 : text.match(regex).length;
+            document.getElementById("occurence").style.visibility="initial";
+        }
+
+        function clearForm()
+        {
+            document.getElementById("textEntered").value="";
+            document.getElementById("search").value="";
+            document.getElementById("occurence").style.visibility="hidden";
+        }
+    </script>
+</html>

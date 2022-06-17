@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!--24.	Design a Job Registration form/Sign Up form using HTML. [The Form should contains Textbox[name], 
+Radio button [gender], Text area[comments], List Items[country],File[Browse], LabelField, Password field[password]
+and check box. -->
+
+<html>
+    <head>
+        <title>Registration form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" name="name">
+            
+            <br><br>
+            
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd">
+            
+            <br><br>
+            
+            <label for="gender">Gender</label>
+            <input type="radio" value="Male" name="gender">Male
+            <input type="radio" value="Female" name="gender">Female
+            
+            <br><br>
+            
+            <label for="comments">Comments</label>
+            <textarea rows="5" cols="15"></textarea>
+            
+            <br><br>
+            
+            <label for="country">Country name</label>
+            <select name="country"> 
+                <option value="India">India</option>
+                <option value="Canada">Canada</option>
+            </select>
+            
+            <br><br>
+            
+            <label for="fileBrowse">Select File</label>
+            <br>
+            <input type="file" name="fileBrowse">
+            
+            <br><br>
+            
+            <input type="checkbox" name="check">I agree to the terms and conditions
+            
+            <br><br>
+            
+            <input type="submit" value="Submit">
+            
+        </form>
+    </body>
+</html>

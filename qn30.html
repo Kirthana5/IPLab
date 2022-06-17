@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!--
+30.	Write a Html form to enter the salary details of an employee(Name,Empid,Designation,Basic pay,
+DA is 10% of basic pay, HRA is 3% of basic pay). Write a servlet to calculate the net salary of employee. 
+Display the entire details of the employee.
+-->
+<html>
+    <head>
+        <title>Salary Details</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <center><h1>Gross Salary Calculation</h1></center>
+        <div class="container">
+            
+            <form action="http://localhost:8080/IPLab/qn30">
+                <label for="name">Name</label>
+                <input type="text" name="name">
+                
+                <br><br>
+                
+                <label for="empid">Employee ID</label>
+                <input type="text" name="empid">
+                
+                <br><br>
+                
+                <label for="basicPay">Basic Pay</label>
+                <input type="number" name="basicPay">
+                
+                <br><br>
+                               
+                <input type="submit" value="Calculate Salary">
+                
+            </form>
+        </div>
+    </body>
+</html>

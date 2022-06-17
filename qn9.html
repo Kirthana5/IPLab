@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!--
+9.	Write a Java Server Page program to find the simple interest .
+Test this by a client program to get the form data inputs
+(Principal amount, rate of interest,periods) and display the result(SI=(P*N*R)/100).
+-->
+<html>
+    <head>
+        <title>PNR</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="http://localhost:8080/IPLab/qn9.jsp">
+                <label for="p">Principal amount</label>
+                <input type="text" name="p">
+                
+                <br><br>
+                
+                <label for="r">Rate of Interest</label>
+                <input type="text" name="r">
+                
+                <br><br>
+                
+                <label for="n">Period</label>
+                <input type="number" name="n">
+                
+                <br><br>
+                               
+                <input type="submit" value="Calculate SI">
+                
+            </form>
+    </body>
+</html>

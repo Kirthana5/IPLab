@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!--
+25.	Create a page with JavaScript to do the following. These can all be on one page. 
+(a) Prompt the user for their name.
+(b) Use a pop-up box to welcome the user by name.
+(c) Display the current date on the page in the following format: April 30, 2014.
+Do not display the time. Do not "hard code" the date; if I load the page tomorrow,
+I should get a different date than if I load it today.
+(d) Display the last modified date of the document.
+(e) Put some useful advice, on any subject, in the status line of the browser.
+-->
+
+<html>
+    <head>
+        <title>JS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <!-- window status -->
+    <body onLoad="window.status='Welcome to my page..!!';">
+
+    <h2>JavaScript Basics</h2>
+    <p id="date"></p>
+    <p id="lastModified"></p>
+
+    <script>
+        //prompt
+        var name=prompt("Enter name:");
+        //pop-up box
+        alert("Hello "+name+"!!");
+
+        //current date
+        var months=["January","February","March","April","May","June","July","August","September","November","December"];
+
+        var curDate=new Date();
+
+        var date=curDate.getDate();
+        var month=months[curDate.getMonth()];
+        var year=curDate.getFullYear();
+
+        document.getElementById("date").innerHTML="Today's date- "+(month+" "+date+","+year);
+
+        //last modified date
+        document.getElementById("lastModified").innerHTML="Last Modified date: "+document.lastModified;
+    </script>
+</body>
+</html>

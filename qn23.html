@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!--
+23.	Create a User Registration form with First Name, Last name, Address, City, State, Country,Pincode, Username and Password fields for a General login webpage and satisfy the following criteria: 
+Create a validate ( ) function that does the following:
+(a) Checks that the First Name, Last Name, City, Country, Username, and Password1 fields arefilled out.
+(b) Checks that the Pincode is exactly 6 numeric’s.
+(c) Checks that the state is exactly two characters.
+(d) Checks that the email is a valid email address.
+• false if email has fewer than 6 characters
+• false if email does not contain an @ symbol
+• false if email does not contain a period (.)
+• true otherwise
+-->
+
+<html>
+    <head>
+        <title>Form Validation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form name="myform" action="" target="blank" onsubmit="validate()">
+            <label for="fName">FirstName</label>
+            <input type="text" id="fName">
+
+            <br><br>
+
+            <label for="lName">LastName</label>
+            <input type="text" id="lName">
+
+            <br><br>
+
+            <label for="address">Address</label><br>
+            <textarea name="address" id="address" cols="30" rows="4"></textarea>
+
+            <br><br>
+
+            <label for="city">City</label>
+            <input type="text" id="city">
+
+            <br><br>
+
+            <label for="state">State</label>
+            <input type="text" id="state">
+
+            <br><br>
+
+            <label for="country">Country</label>
+            <input type="text" id="country">
+
+            <br><br>
+
+            <label for="pincode">Pincode</label>
+            <input type="number" id="pincode">
+
+            <br><br>
+
+            <label for="username">User Name</label>
+            <input type="text" id="username">
+
+            <br><br>
+
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd">
+
+            <br><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    <script>
+        function validate()
+        {
+            var fName=document.getElementById("fName").value;
+            var lName=document.getElementById("lName").value;
+            var address=document.getElementById("address");
+            var city=document.getElementById("city").value;
+            var state=document.getElementById("state").value;
+            var country=document.getElementById("country").value;
+            var pincode=document.getElementById("pincode").value;
+            var username=document.getElementById("username").value;
+            var pwd=document.getElementById("pwd").value;
+            var email=document.getElementById("email").value;
+
+            //check fields are filled or not
+            if(fName=="")
+            {
+                alert("FirstName must be filled..!!");
+                return false;
+            }
+            if(lName=="")
+            {
+                alert("LastName must be filled..!!");
+                return false;
+            }
+            if(city=="")
+            {
+                alert("City must be filled..!!");
+                return false;
+            }
+            if(country=="")
+            {
+                alert("Country must be filled..!!");
+                return false;
+            }
+            if(username=="")
+            {
+                alert("UserName must be filled..!!");
+                return false;
+            }
+            if(pwd=="")
+            {
+                alert("Password must be filled..!!");
+                return false;
+            }
+
+            //pincode
+            if(pincode.toString().length!=6)
+            {
+                
+                alert("Pincode should contain 6 digits..!!");
+                return false;
+            }
+
+            //state
+            if(state.length!=2)
+            {
+                
+                alert("State should be of 2 characters..!!");
+                return false;
+            }
+
+            //mail
+            if(email.length<6 || !email.match(/[a-z0-9]+@[a-z]+.[a-z]{2,5}/g))
+            {
+                alert("This format of mail id is not supported..!!");
+                return false;
+            }
+        }
+    </script>
+    </body>
+</html>
