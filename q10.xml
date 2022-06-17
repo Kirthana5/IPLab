@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!--10.	Create an XML to represent the BOOKS catalog that has the following 
+elements(TITLE,ISBN NO,AUTHOR,PUBLISHER,PRICE).Display the book details styledwith XSLT.-->
+
+<root>
+    <book>
+        <title>AAA</title>
+        <isbn_no>1234</isbn_no>
+        <author>xxx</author>
+        <publisher>AA Publications</publisher>
+        <price>250</price>
+    </book>
+    <book>
+        <title>BBB</title>
+        <isbn_no>1543</isbn_no>
+        <author>xxx</author>
+        <publisher>AA Publications</publisher>
+        <price>370</price>
+    </book>
+    <book>
+        <title>CCC</title>
+        <isbn_no>1778</isbn_no>
+        <author>yyy</author>
+        <publisher>PK Publications</publisher>
+        <price>175</price>
+    </book>
+    <book>
+        <title>DDD</title>
+        <isbn_no>1871</isbn_no>
+        <author>xxx</author>
+        <publisher>DS Publications</publisher>
+        <price>678</price>
+    </book>
+    <book>
+        <title>EEE</title>
+        <isbn_no>1879</isbn_no>
+        <author>zzz</author>
+        <publisher>MS Publications</publisher>
+        <price>545</price>
+    </book>
+</root>

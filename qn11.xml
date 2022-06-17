@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--11.	Create an Extensible mark up language to represent the students mark information of a  class.
+Create a webpage to display all the students consolidated mark statement with pass (green color)or fail
+(red color)using XSLT. -->
+
+
+
+
+
+<root>
+    <student>
+        <name>Kirthana</name>
+        <rollno>72</rollno>
+        <dept>CSE</dept>
+        <marks>pass</marks>
+    </student>
+    <student>
+        <name>Kavi</name>
+        <rollno>77</rollno>
+        <dept>ECE</dept>
+        <marks>pass</marks>
+    </student>
+    <student>
+        <name>Paarkavi</name>
+        <rollno>81</rollno>
+        <dept>CSE</dept>
+        <marks>pass</marks>
+    </student>
+    <student>
+        <name>Yaazhan</name>
+        <rollno>45</rollno>
+        <dept>MECH</dept>
+        <marks>fail</marks>
+    </student>
+    <student>
+        <name>Sathya</name>
+        <rollno>100</rollno>
+        <dept>IT</dept>
+        <marks>fail</marks>
+    </student>
+    <student>
+        <name>Aadhi</name>
+        <rollno>97</rollno>
+        <dept>ECE</dept>
+        <marks>pass</marks>
+    </student>
+    <student>
+        <name>Rajan</name>
+        <rollno>71</rollno>
+        <dept>CSE</dept>
+        <marks>fail</marks>
+    </student>
+    <student>
+        <name>Hari</name>
+        <rollno>85</rollno>
+        <dept>MECH</dept>
+        <marks>fail</marks>
+    </student>
+</root>
