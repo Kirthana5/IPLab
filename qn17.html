@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Inventory</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form id="myform" onsubmit='validate(this)'>
+            Name<input type="text" name="name" id="name">
+            <br><br>
+            ID<input type="text" name="id" id='id'>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+            function validate(form)
+            {
+                if(document.getElementById("name").value=="" || document.getElementById("id").value=="")
+                {
+                    alert("Enter all fields..!!");
+                    return false;
+                }
+                else
+                {
+                    document.getElementById("myform").action="http://localhost:8080/IPLab/qn17_1.jsp";
+                }
+            }
+        </script>
+    </body>
+</html>
