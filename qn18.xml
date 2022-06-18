@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!--EMPLOYEE (ENO, NAME, GENDER, DOB, DOJ, DESIGNATION, BASIC, DEPT_NO, PAN, SENO) 
+DEPARTMENT (DEPT_NO, NAME, MENO)
+PROJECT (PROJ_NO, NAME, DEPT_NO) 
+WORKSFOR (ENO, PROJ_NO, DATE_WORKED, HOURS) -->
+
+<root>
+    <employee>
+        <eno>1</eno>
+        <name>Arun</name>
+        <gender>Male</gender>
+        <dob>19-01-2002</dob>
+        <doj>26-05-2022</doj>
+        <designation>Supervisor</designation>
+        <basic>10000</basic>
+        <dept_no>D101</dept_no>
+        <pan>23455432</pan>
+        <seno>S1011</seno>
+    </employee>
+    <employee>
+        <eno>2</eno>
+        <name>Yazh</name>
+        <gender>Female</gender>
+        <dob>19-01-1997</dob>
+        <doj>28-05-2019</doj>
+        <designation>Supervisor</designation>
+        <basic>25000</basic>
+        <dept_no>D101</dept_no>
+        <pan>23455432</pan>
+        <seno>S1011</seno>
+    </employee>
+    <employee>
+        <eno>3</eno>
+        <name>Neha</name>
+        <gender>Female</gender>
+        <dob>19-01-2002</dob>
+        <doj>26-05-2022</doj>
+        <designation>Supervisor</designation>
+        <basic>10000</basic>
+        <dept_no>D105</dept_no>
+        <pan>23455432</pan>
+        <seno>S1211</seno>
+    </employee>
+    <employee>
+        <eno>4</eno>
+        <name>Yazhan</name>
+        <gender>Male</gender>
+        <dob>19-01-1997</dob>
+        <doj>28-05-2019</doj>
+        <designation>Supervisor</designation>
+        <basic>25000</basic>
+        <dept_no>D105</dept_no>
+        <pan>23455432</pan>
+        <seno>S1071</seno>
+    </employee>
+    <departmenent>
+        <dept_no>D101</dept_no>
+        <name>XXX</name>
+        <meno>M101</meno>
+    </departmenent>
+    <department>
+        <dept_no>D105</dept_no>
+        <name>YYY</name>
+        <meno>M105</meno>
+    </department>
+    <project>
+        <project_no>P111</project_no>
+        <name>P1</name>
+        <dept_no>D101</dept_no>
+    </project>
+    <project>
+        <project_no>P222</project_no>
+        <name>P2</name>
+        <dept_no>D101</dept_no>
+    </project>
+    <project>
+        <project_no>P333</project_no>
+        <name>P3</name>
+        <dept_no>D105</dept_no>
+    </project>
+    <worksfor>
+        <eno>1</eno>
+        <project_no>P222</project_no>
+        <dates_worked>June 13 to June 15</dates_worked>
+        <hours>8 hours/day</hours>
+    </worksfor>
+    <worksfor>
+        <eno>1</eno>
+        <project_no>P111</project_no>
+        <dates_worked>June 10 to June 12</dates_worked>
+        <hours>6 hours/day</hours>
+    </worksfor>
+</root>
