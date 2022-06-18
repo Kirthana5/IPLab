@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+            Name<input type="text" id="name">
+            <br><br>
+            Mail id <input type="text" id="mail">
+            <br><br>
+            <input type="button" value="Submit" onclick="validate()">
+        </form>
+        <h1>Reliance Super Market</h1>
+        <a href="sample1.html" target="frame">Groceries</a>
+        <a href="sample3.html" target="frame">Cosmetics</a>
+        <a href="sample4.html" target="frame">Stationaries</a>
+        <br>
+        <iframe src="sample2.html" name="frame"></iframe>
+        <script>
+            function validate()
+            {
+                if(document.getElementById("name").value=="" || document.getElementById("mail").value=="")
+                {
+                    alert("Enter all the fields..!!");
+                    return false;
+                }
+                if(!document.getElementById("mail").value.match(/[a-z0-9]+@[a-z]+.[a-z]{2,5}/g))
+                {
+                    alert("Enter valid mail id..!!");
+                    return false;
+                }
+                else
+                {
+                    alert("Valid details..!!");
+                }
+            }
+        </script>
+    </body>
+</html>
