@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!--CUSTOMER (CID, CNAME)  
+ACCOUNT (ANO, ATYPE, BALANCE, CID) 
+TRANSACTION (TID, ANO, TTYPE, TDATE, TAMOUNT) -->
+
+<!--Apprx. Correct-->
+
+<root>
+    <customer>
+        <cid>C101</cid>
+        <cname>Aadhi</cname>
+    </customer>
+    <customer>
+        <cid>C102</cid>
+        <cname>Arav</cname>
+    </customer>  
+    <account>
+        <ano>1223</ano>
+        <atype>S</atype>
+        <balance>25000</balance>
+        <cid>C101</cid>
+    </account>
+    <account>
+        <ano>2134</ano>
+        <atype>C</atype>
+        <balance>10000</balance>
+        <cid>C101</cid>
+    </account>
+    <account>
+        <ano>1445</ano>
+        <atype>S</atype>
+        <balance>43000</balance>
+        <cid>C102</cid>
+    </account>
+    <transaction>
+        <tid>t201</tid>
+        <ano>2134</ano>
+        <ttype>D</ttype>
+        <tdate>23-05-2022</tdate>
+        <tamount>10000</tamount>
+    </transaction>
+    <transaction>
+        <tid>t205</tid>
+        <ano>1445</ano>
+        <ttype>W</ttype>
+        <tdate>19-05-2022</tdate>
+        <tamount>20000</tamount>
+    </transaction>
+</root>
